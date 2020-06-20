@@ -1,0 +1,31 @@
+
+  .button {
+    --button--bg-color: #ddd;
+    --button--text-color: #888;
+    --button--new-bg-color: #ff1414;
+    --button--selected-bg-color: #000;
+    --button--selected-text-color: #fff;
+  
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--button--bg-color, --button--bg-color);
+    color: var(--button--text-color, --button--text-color);
+  
+    &--selected {
+      background-color: var(
+        --button--selected-bg-color,
+        --button--selected-bg-color
+      );
+      color: var(--button--selected-text-color, --button--selected-text-color);
+    }
+  }
+  .button__new {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--button--new-bg-color, --button--new-bg-color);
+    border-radius: 50%;
+  }
